@@ -3,7 +3,7 @@ import categoryModel from "../models/categoryModel.js"
 //CREATE Category
 export const createCategory=async(req,res)=>{
   try{
-      const {category}=req.body
+      const {category}=req.body 
       //validation
       if(!category){
         return res.status(404).send({
