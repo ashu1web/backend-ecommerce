@@ -121,7 +121,7 @@ export const paymetsController = async (req, res) => {
       if (!totalAmount) {
         return res.status(404).send({
           success: false,
-          message: "Total Amount is require",
+          message: "Total Amount is required",
         });
       }
       const {client_secret}  = await stripe.paymentIntents.create({
