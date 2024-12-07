@@ -13,7 +13,7 @@ export const createOrderController = async (req, res) => {
         tax,
         shippingCharges,
         totalAmount,
-      } = req.body;
+      } = req.body; 
       //valdiation
       // create order
       await orderModel.create({
